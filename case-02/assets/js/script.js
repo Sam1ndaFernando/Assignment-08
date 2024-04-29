@@ -1,4 +1,4 @@
-let colour = ['red','green','blue','yellow','lightpink','pink'];
+let color = ['red','green','blue','yellow','lightpink','pink'];
 let items = $('.color');
 
 for (let i = 0; i<items.length; i++){
