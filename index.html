@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Animation</title>
+    <style>
+        :root {
+            --gradient: linear-gradient(-45deg, #ec4899, #00024d);
+        }
+
+        body {
+            font-family: "Alexandria", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: var(--gradient);
+            background-size: 300%;
+            animation: bg-animation 20s infinite;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: scale(1.1);
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: left;
+            }
+            50% {
+                background-position: right;
+            }
+            100% {
+                background-position: left;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="button-container">
+    <a href="case-01/index.html" target="_blank">Case 01</a>
+    <a href="case-02/index.html" target="_blank">Case 02</a>
+</div>
+</body>
+</html>
